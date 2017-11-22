@@ -6,6 +6,7 @@ public class Score : MonoBehaviour {
 
     private Hungry hungry;
     private float score;
+    public float getScore { get { return score; } }
 
     void Start()
     {
@@ -15,6 +16,5 @@ public class Score : MonoBehaviour {
     void FixedUpdate()
     {
         score = hungry.Amount + 0.03f;
-        Debug.Log(score);
     }
 }
